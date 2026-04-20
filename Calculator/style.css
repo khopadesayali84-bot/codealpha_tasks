@@ -1,0 +1,122 @@
+:root {
+    --pink: #ff00cc;
+    --pink-light: #ff66cc;
+    --black: #0d0d0d;
+    --dark-gray: #1a1a1a;
+    --light-gray: #2a2a2a;
+}
+
+/* Center properly */
+body {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--dark-gray);
+
+    border: 1px solid rgba(255, 0, 204, 0.3);
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 204, 0.4),
+        inset 0 0 10px rgba(255, 0, 204, 0.2);
+}
+
+/* Display */
+.display {
+    width: 100%;
+    height: 90px;
+    background: var(--black);
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+}
+
+/* Text */
+.previous-operand {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.current-operand {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Common button */
+button {
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+
+    background: var(--light-gray);
+    color: white;
+
+    transition: 0.2s ease;
+}
+
+/* Hover */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.4);
+}
+
+/* Active */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Numbers */
+.number {
+    background: #2a2a2a;
+}
+
+/* Operators */
+.operator {
+    background: rgba(255, 0, 204, 0.2);
+    color: var(--pink-light);
+}
+
+/* Equals */
+.equals {
+    grid-column: span 2;
+    background: linear-gradient(135deg, var(--pink), var(--pink-light));
+    font-weight: bold;
+}
+
+/* Clear & Delete */
+.clear, .delete {
+    background: rgba(255, 60, 60, 0.2);
+    color: #ff4d4d;
+}
+
+/* Span 2 */
+.span-2 {
+    grid-column: span 2;
+}
