@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-header">
+            <h1 class="gallery-title">Pixel Paradise</h1>
+            <p>Explore our stunning collection of images</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="people">People</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item" data-category="people" data-caption="group4">
+              <img src="images/peopleImg4.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="animals" data-caption="lion">
+              <img src="images/animalsImg1.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="nature" data-caption="valley">
+              <img src="images/natureImg1.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="architecture" data-caption="company">
+              <img src="images/architectureImg1.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="animals" data-caption="cat">
+              <img src="images/animalsImg2.jpeg" class="gallery-img">
+          </div>
+          
+          <div class="gallery-item" data-category="people" data-caption="group1">
+              <img src="images/peopleImg1.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="architecture" data-caption="house">
+              <img src="images/architectureImg2.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="people" data-caption="group2">
+              <img src="images/peopleImg2.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="nature" data-caption="sunrise">
+              <img src="images/natureImg2.jpeg" class="gallery-img">
+          </div>
+         
+          <div class="gallery-item" data-category="animals" data-caption="tiger">
+              <img src="images/animalsImg3.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="people" data-caption="lady">
+              <img src="images/peopleImg5.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="nature" data-caption="bridge">
+              <img src="images/natureImg3.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="architecture" data-caption="bunglow">
+              <img src="images/architectureImg3.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="people" data-caption="group3">
+              <img src="images/peopleImg3.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="animals" data-caption="deer">
+              <img src="images/animalsImg4.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="architecture" data-caption="company2">
+              <img src="images/architectureImg4.jpeg" class="gallery-img">
+          </div>
+
+          <div class="gallery-item" data-category="nature" data-caption="butterfly">
+              <img src="images/natureImg4.jpeg" class="gallery-img">
+          </div>
+
+          
+
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <i class="lightbox-close fas fa-times"></i>
+            <i class="lightbox-prev fas fa-chevron-left"></i>
+            <i class="lightbox-next fas fa-chevron-right"></i>
+            <img class="lightbox-img" src="" alt="">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
